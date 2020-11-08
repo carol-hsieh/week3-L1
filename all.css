@@ -196,6 +196,7 @@ a {
     .logo{
         margin:10px auto; 
         margin-bottom:10.86px;
+        width: 48px;
     }
     .header_menu li{
         width: 25%;
@@ -240,6 +241,7 @@ a {
    .blog_nav .container{
     display: none;
     }
+    
 }
 /* 內文 */
 .program_list{

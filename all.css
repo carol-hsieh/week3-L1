@@ -1,0 +1,403 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+  }
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+    /* padding:64px 0 80px; */
+}
+
+/* font-bold */
+.fw-bold{
+    font-weight: bold;
+}
+
+/* font-size */
+.fz1{
+    font-size: 16px;
+}
+.fz2{
+    font-size: 20px;
+}
+.fz3{
+    font-size: 32px;
+}
+.fz4{
+    font-size: 36px;
+}
+
+ /* light-hight */
+.lh1{
+    line-height: 24px;
+}
+.lh2{
+    line-height: 30px;
+}
+.lh3{
+    line-height: 54px;
+}
+.lh4{
+    line-height: 63px;
+}
+
+.mb1{
+    margin-bottom: 19px;
+}
+
+.mb2{
+    margin-bottom: 60px;
+}
+.mb3{
+    margin-bottom: 78px;
+}
+
+.mb4{
+    margin-bottom: 82px;
+}
+.mb5{
+    margin-bottom: 110px;
+}
+.mb6{
+    margin-bottom: 156px;
+}
+
+.ml1{
+    margin-left: 32px;
+}
+.ml2{
+    margin-left: 62px;
+}
+
+.mr1{
+    margin-right: 48px;
+}
+
+.pt1{
+    padding-top: 24px;
+}
+
+.pb1{
+    padding-bottom: 48px;
+}
+
+/* display flex  */
+.d-flex {
+     display: flex;
+  }  
+.flex-wrap {
+        flex-wrap: wrap;
+}
+.justify-content-between {
+    justify-content: space-between;
+}
+.justify-content-center {
+    justify-content: center;
+}
+.align-items-center {
+    align-items: center;
+}
+
+/* color */
+.primary-color{
+    background: #aa0601;
+}
+.secondary-color{
+    background: #650300;
+}
+.secondary-color-word{
+    color:#650300;
+}
+
+/* 第一選單 */
+.header{
+    padding: 30px 88px;
+    align-items: center;
+
+}
+
+.header_menu li{
+    margin-left: 64px;
+    color: #fff;
+    ;
+}
+
+@media(max-width: 768px) {
+    .header{
+        padding: 30px 39px;
+    }
+    .header_menu li{
+        margin-left: 40px;
+    }
+}
+
+@media(max-width: 375px) {
+    .header{
+        padding:0px;
+        flex-wrap: wrap;
+    }
+    .logo{
+        margin:10px auto; 
+        margin-bottom:10.86px;
+    }
+    .header_menu li{
+        width: 25%;
+        margin:0;
+        padding: 8px 43px; 
+        text-align: center;
+        border: 1px solid #ffffff;
+    }
+} 
+
+
+/* 第二選單 */
+.blog_nav_inner{
+    padding: 12px 0 14px;
+}
+.blog_menu li{
+    margin-right: 48px;
+}
+.search .search_input{
+    display: none;
+}
+
+
+@media(max-width: 768px) {
+    .container{
+        max-width: 690px;
+    }
+    .blog_nav_inner{
+        padding: 16px 0 16px;
+    }
+    .blog_menu{
+        font-size: 16px;
+    }
+    .blog_menu li{
+        margin-right: 39px;
+    }
+
+}
+@media(max-width: 375px) {
+   .blog_nav .container{
+    display: none;
+    }
+}
+/* 內文 */
+.program_list{
+     margin-bottom: 60px;
+}
+.program_list .program_img{
+    width: 59%;
+}
+
+.program_img img{
+    width: 100%;
+}
+
+.program_content{
+    width: 41%;
+    margin-left: 30px;
+    position: relative;
+}
+.program_content .more{
+    font-weight: 900;
+    position: absolute;
+    bottom: 0;
+    left: 340px;
+}
+
+/* pages */
+.pages{
+    text-align: center;
+}
+.pages a{
+    color: #000;
+    border: 1px solid #555555;
+    padding: 10px;
+    color: #000000;
+    font-size: 18px;
+    line-height: 27px;
+}
+/* footer */
+.footer_nav{
+    padding-top: 48px;
+    align-items: center;
+    margin-bottom: 18px;
+}
+.contact_item{
+    margin-bottom: 26px;
+} 
+.contact_item a{
+   margin-left: 30px;
+} 
+
+/* copyright */
+.copyright_title{
+    align-items: center;
+}
+
+.copyright{
+    /* padding-top: 12px; */
+    border-top: 1px solid #ffffff;
+    padding-bottom: 28.43px;
+    color:#fff;
+} 
+.copyright .copyright_content{
+    width: 89%;
+}
+
+
+@media(max-width: 768px) {
+    .container{
+        max-width: 690px;
+    }
+    .footer_nav{
+        padding-top: 36px;
+        margin-bottom: 22px;
+    }
+    .footer_menu .mr1{
+        margin-right: 40px;
+    }
+    .icon a .ml1{
+        margin-right: 24px;
+    }
+    .icon img{
+        width: 24px;
+    }
+    .footer_contact{
+        margin-bottom: 12px;
+    }
+    .contact_item{
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .contact_item a{
+        margin-left: 15px;
+     } 
+    .contact_item img{
+        width: 24px;
+    }
+    .telephone{
+        margin-bottom: 15px;
+    }
+    .email{
+        margin-bottom: 28px;
+    }
+    .copyright_title a {
+        display: none;
+    }
+    .copyright .copyright_content{
+        width: 100%;
+    }
+}
+@media(max-width: 375px) {
+    .footer .container{
+        max-width: 360px;
+        padding: 0 18px;
+      
+    }
+    .footer_nav .footer_menu{
+     display: none;
+     }
+     .contact_item{
+        font-size: 16px;
+    }
+    .footer_inner{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+        
+    }    
+    .footer_contact{
+        padding-top: 23px;
+        margin-bottom: 0px;
+    }
+
+    .footer_nav .ml1{
+        margin-left: 24px;
+    }
+
+    /* copyright */
+    .copyright{
+        flex-direction: row-reverse;
+        align-items:flex-end;
+        padding-bottom: 21px;
+    }
+    .copyright_title a {
+        display: block;
+        width: 46px;
+    }
+    .copyright_content{
+        flex-direction: column;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .copyright_content p{
+        margin-bottom: 7px;
+    }
+    .other_services{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .other_services li{
+        margin-bottom: 8px;
+    }
+    .other_services .ml2{
+        margin-left: 0;
+    }
